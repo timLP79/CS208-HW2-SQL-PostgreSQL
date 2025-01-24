@@ -189,11 +189,13 @@ Uncomment and complete the following 2 UPDATE statements to change the row with 
   - set the new code: 'CS 402' (from null)
   - set the new title: 'Mobile Application Development' (from 'CS 402 Mobile Development')
 */
--- UPDATE classes
--- TBD_complete_this_statement
+UPDATE classes
+SET code = 'CS 402'
+WHERE title = 'CS 402 Mobile Development' and code is null;
 
--- UPDATE classes
--- TBD_complete_this_statement
+UPDATE classes
+set title = 'Mobile Application Development'
+WHERE title = 'CS 402 Mobile Development';
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
