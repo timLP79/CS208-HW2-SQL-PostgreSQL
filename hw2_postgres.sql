@@ -213,7 +213,7 @@ SET description = 'A project-intensive course on mobile development using either
 WHERE code = 'CS 402';
 
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+--fkd/el
 /*
 Write a DELETE statement to delete all students born before '1900-01-01' or those that have a 'w' in their last name
 
