@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS students;
 
 CREATE TABLE classes
 (
-    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    id           SERIAL PRIMARY KEY,
     code         VARCHAR(10) UNIQUE,
     title        VARCHAR(50) NOT NULL,
     description  VARCHAR(200),
@@ -28,7 +28,7 @@ CREATE TABLE classes
 
 CREATE TABLE students
 (
-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    id         SERIAL PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name  VARCHAR(50) NOT NULL,
     birth_date DATE
@@ -251,7 +251,7 @@ Write a DELETE statement to delete all students born before '1900-01-01' or thos
 
 CREATE TABLE registered_students
 (
-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    id         SERIAL PRIMARY KEY,
     class_id   INTEGER NOT NULL,
     student_id INTEGER NOT NULL,
     FOREIGN KEY (class_id) REFERENCES classes (id),
@@ -260,7 +260,7 @@ CREATE TABLE registered_students
 
 -- 📖 SQLite CURRENT_TIMESTAMP documentation: https://www.sqlitetutorial.net/sqlite-date-functions/sqlite-datetime-function/
 ALTER TABLE registered_students
-    ADD COLUMN signup_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP;
+    ADD COLUMN signup_timestamp TIMESTAMP NOT NULL DEFAULT NOW();
 
 -- Canvas: Answer question Q14
 
