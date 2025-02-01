@@ -466,7 +466,7 @@ VALUES (-10, 208);
 
 -- Canvas: Answer question Q19
 -- After answering Q19 on Canvas about the error, comment out the above INSERT statement.
-
+-- test
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -- Run the following two INSERT statements
